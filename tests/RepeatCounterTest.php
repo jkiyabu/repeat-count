@@ -44,5 +44,19 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_countsInPhraseCapitalization()
+        {
+            //Arrange
+            $phrase = "Hello Hello World";
+            $search_word = "hello";
+            $test_RepeatCounter = new RepeatCounter($phrase, $search_word);
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($phrase, $search_word);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
