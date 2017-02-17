@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <meta charset="utf-8">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <title>Repeat Counter</title>
     </head>
     <body>
         <div class='container'>
-            <h1>Repeat Counter</h1>
-            <p>{{searchword}} was counted {{ result }} time(s)</p>
-            <a href="/">Back</a>
+            <div class='jumbotron'>
+                <h1>Repeat Counter</h1>
+            </div>
+            <img src="img/calculator.png" alt="">
+            {% if result == 1 %}
+                <h2>"{{ searchword }}" was found 1 time!!</h2>
+            {% else %}
+                <h2>"{{ searchword }}" was found {{ result }} times!!</h2>
+            {% endif %}
+            <br>
+            <a href="/"><h2>Back</h2></a>
         </div>
     </body>
 </html>
