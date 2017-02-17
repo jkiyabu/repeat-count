@@ -1,12 +1,17 @@
 .jumbotron {
-    background-color: red;
+    background-color: black;
     color: white;
     text-align: center;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 12px solid lightgray;
 }
 
 body {
-    background-color: lightgray;
+    background-color: darkgray;
     font-family: monospace;
+    color: white;
 }
 
 img {
