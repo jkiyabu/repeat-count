@@ -3,15 +3,14 @@
     {
         function countRepeats($phrase, $search_word)
         {
+            $count = 0;
             $words = explode(" ", $phrase);
             foreach($words as $word) {
                 if ($word == $search_word) {
-                    return 1;
-                } else {
-                    return 0;
+                    $count++;
                 }
             }
+            return $count;
         }
     }
-
 ?>
