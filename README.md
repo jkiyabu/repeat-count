@@ -15,6 +15,7 @@
 |user inputs a string of text and a word to search for within the given phrase.  The app will let user know if given word is in the phrase| "Hello World!", "Hello"| 1 |
 |user inputs a string of text and a word to search for within the given phrase.  The app will let user know how many times the word is in the given phrase| "Hello Hello World", "Hello" | 2 |
 |user inputs a string of text and a word to search for within the given phrase.  The app will account for capitalization and let user know how many times the word is in the given phrase| "Hello Hello World", "hello" | 2 |
+|user inputs a string of text and a word to search for within the given phrase.  The app will account for capitalization and punctuation and let user know how many times the word is in the given phrase| "Hello! Hello! World!", "hello" | 2 |
 
 ## Setup/Installation Requirements
 
