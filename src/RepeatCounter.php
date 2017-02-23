@@ -4,10 +4,10 @@
         function countRepeats($phrase, $search_word)
         {
             $count = 0;
-            $phrase_no_punc = preg_replace( "/[^a-z]/i", " ", $phrase);
-            $words = explode(" ", $phrase_no_punc);
+            $word_replace = str_ireplace($search_word, " word ", $phrase);
+            $words = explode(" ", $word_replace);
             foreach($words as $word) {
-                if (strtolower($word) == strtolower($search_word)) {
+                if ($word == "word") {
                     $count++;
                 }
             }
